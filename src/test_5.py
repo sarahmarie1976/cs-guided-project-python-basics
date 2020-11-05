@@ -28,23 +28,33 @@ def csSchoolYearsAndGroups(years, groups):
     # return a function showing groups by year (as a string) 
     # also needs to be separated by a comma and space 
 
-    nala = range(1, years + 1)
-    groups = "1234"
-    numbers = ""
-    for letter in groups:
-        number = ord(letter) - 96
-        numbers.append(number)
-    return number    
+    # nala = range(1, years + 1)
+    # groups = [1]
     
-    yams = ""
-    for n in nala:
-        yams += str(n) + ", " 
+    # for number in groups:
+    #  letter = chr(groups)
+    # yams = ""
+    # for n in nala:
+    #     yams += str(n) + ", " 
     # return letter   
 
-            
-    
-    
+   # create an empty list 
+    alpha_groups = []
 
-    
+   # for loop to iterate the years
+    for y in range(1, years + 1 ):
 
+   #   # for loop nested to iterate over the groups
+        
+        for g in range(groups):
+   
+         # I'll use the chr() to convert the int to string
+         alpha_groups.append( str(y) + chr(g + 97) )
+         
+         # after create=ing append it to the lsit
+
+    # joining the items in list to one string
+    return ", ".join(alpha_groups)   
+
+               
 print(csSchoolYearsAndGroups(years = 7, groups = 4))    
