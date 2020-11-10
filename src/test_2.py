@@ -21,12 +21,6 @@ Any string that contains spaces or is empty should return False.
 
 [Python 3] Syntax Tips
 
-# Prints help message to the console
-# Returns a string
-def helloWorld(name):
-    print("This prints to the console when you Run Tests")
-    return "Hello, " + name
-
 
 """
 
